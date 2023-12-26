@@ -1,0 +1,396 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Facebook Onetobot All Fitur
+</name>
+</assembly>
+<members>
+<member name="T:Facebook_Onetobot_All_Fitur.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.add_circle_create_expand_new_plus_icon_123218">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.add_list_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.box_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.box_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.car_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.car_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.car_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.delete_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.draf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.email_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.email_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.email_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.exam">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.exam_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.exam_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.feedback_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.feedback_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.feedback_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.folder_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.folder_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.folder_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.group_users_13234">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.home_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.home_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.interaksi">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.join_grup">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.kisspng_clip_art_comics_cartoon_speech_balloon_comic_book_5ba23691ab7eb5_5982996415373574577025_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.label_114874">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.link_symbol_of_two_chains_links_linked_icon_icons_com_56928">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.lite_facebook">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.loan_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.loan_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.loan_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.login_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.login_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.login_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.logo_onetobot_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.logo_onetobot_1__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.LOGO_ONETOBOT_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.menus_wht">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.menus_wht_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.message_icon_icons_com_64615">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.messenger_blast">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.mobil">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.mobil2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.Motor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.motorcycle_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.motorcycle_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.motorcycle_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.networking_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.networking_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.networking_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.online_shop_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.online_shop_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.online_shop_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.package_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.package_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.package_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.pause_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.posting_grup_facebook">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.Produk_Post">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.properti1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.right_arrow_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.rotate_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.save_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.save_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.save_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.setting_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.setting_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.setting_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.shuttle_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.shuttle_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.trash_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Facebook_Onetobot_All_Fitur.My.Resources.Resources.YouTube_23392">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

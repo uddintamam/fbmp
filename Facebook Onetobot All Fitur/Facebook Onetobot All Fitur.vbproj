@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1707C855-9E03-475E-8E94-723F3142F4F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Facebook_Onetobot_All_Fitur.My.MyApplication</StartupObject>
+    <RootNamespace>Facebook_Onetobot_All_Fitur</RootNamespace>
+    <AssemblyName>Facebook Onetobot All Fitur</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Facebook Onetobot All Fitur.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Facebook Onetobot All Fitur.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UndetectedChromeDriver, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.UndetectedChromeDriver.1.0.7\lib\net47\UndetectedChromeDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.4.10.0\lib\net47\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.4.10.0\lib\net47\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgressBarCell.vb" />
+    <Compile Include="ProgressBarColumn.vb" />
+    <Compile Include="ScrapDataUserGroupFBControl.Designer.vb">
+      <DependentUpon>ScrapDataUserGroupFBControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapDataUserGroupFBControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostGroupFBControl.Designer.vb">
+      <DependentUpon>PostGroupFBControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostGroupFBControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageReplyerControl.Designer.vb">
+      <DependentUpon>MessageReplyerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageReplyerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReNewPostControl.Designer.vb">
+      <DependentUpon>ReNewPostControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReNewPostControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginFacebook.Designer.vb">
+      <DependentUpon>LoginFacebook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFacebook.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase_old.Designer.vb">
+      <DependentUpon>FormBase_old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase_old.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.vb">
+      <DependentUpon>FormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigProfileLocation.Designer.vb">
+      <DependentUpon>ConfigProfileLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigProfileLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeControl.Designer.vb">
+      <DependentUpon>HomeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingGeneral.Designer.vb">
+      <DependentUpon>SettingGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingGeneral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostFBMobilControl.Designer.vb">
+      <DependentUpon>PostFBMobilControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostFBMobilControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostFBMotorControl.Designer.vb">
+      <DependentUpon>PostFBMotorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostFBMotorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostFBPropertiControl.Designer.vb">
+      <DependentUpon>PostFBPropertiControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostFBPropertiControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostFBLiteControl.Designer.vb">
+      <DependentUpon>PostFBLiteControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostFBLiteControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageSenderControl.Designer.vb">
+      <DependentUpon>MessageSenderControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageSenderControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InteractionFBControl.Designer.vb">
+      <DependentUpon>InteractionFBControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InteractionFBControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PostFBGeneralPostControl.Designer.vb">
+      <DependentUpon>PostFBGeneralPostControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostFBGeneralPostControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContohGeneralPostControl.Designer.vb">
+      <DependentUpon>ContohGeneralPostControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContohGeneralPostControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChromeProfile.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScrapDataUserGroupFBControl.resx">
+      <DependentUpon>ScrapDataUserGroupFBControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostGroupFBControl.resx">
+      <DependentUpon>PostGroupFBControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageReplyerControl.resx">
+      <DependentUpon>MessageReplyerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReNewPostControl.resx">
+      <DependentUpon>ReNewPostControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFacebook.resx">
+      <DependentUpon>LoginFacebook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase_old.resx">
+      <DependentUpon>FormBase_old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigProfileLocation.resx">
+      <DependentUpon>ConfigProfileLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeControl.resx">
+      <DependentUpon>HomeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingGeneral.resx">
+      <DependentUpon>SettingGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostFBMobilControl.resx">
+      <DependentUpon>PostFBMobilControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostFBMotorControl.resx">
+      <DependentUpon>PostFBMotorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostFBPropertiControl.resx">
+      <DependentUpon>PostFBPropertiControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostFBLiteControl.resx">
+      <DependentUpon>PostFBLiteControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageSenderControl.resx">
+      <DependentUpon>MessageSenderControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractionFBControl.resx">
+      <DependentUpon>InteractionFBControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostFBGeneralPostControl.resx">
+      <DependentUpon>PostFBGeneralPostControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContohGeneralPostControl.resx">
+      <DependentUpon>ContohGeneralPostControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_users_13234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label_114874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link-symbol-of-two-chains-links-linked_icon-icons.com_56928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\join grup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interaksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_circle_create_expand_new_plus_icon_123218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo onetobot 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo onetobot 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO ONETOBOT 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-clip-art-comics-cartoon-speech-balloon-comic-book-5ba23691ab7eb5.5982996415373574577025-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube_23392.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lite facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message_icon-icons.com_64615.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messenger blast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posting grup facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produk Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properti1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menus-wht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menus-wht-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-shop-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-shop-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorcycle-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorcycle-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\networking-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\networking-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\networking-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-shop-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorcycle-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuttle-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuttle-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-list-16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.10.0\build\Selenium.WebDriver.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,160 @@
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe.config
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.pdb
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.xml
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.AssemblyReference.cache
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Resources.resources
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.GenerateResource.cache
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.CoreCompileInputs.cache
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.exe
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.xml
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.pdb
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\WebDriver.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\WebDriver.Support.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.xml
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Form1.resources
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.CopyComplete
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Interop.WMPLib.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Interop.WMPLib.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.ResolveComReference.cache
+C:\Users\HamsanSiswanto\Documents\KODINGAN VB NET\9.Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Form2.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe.config
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Interop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.ResolveComReference.cache
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbprojResolveAssemblyReference.cache
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\linux\selenium-manager
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\macos\selenium-manager
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\SeleniumExtras.WaitHelpers.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\System.IO.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\WebDriver.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\WebDriver.Support.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.xml
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.xml
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\Interop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\bin\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Resources.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.GenerateResource.Cache
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.FormBase.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.HomeControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBGeneralPostControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.LoginFacebook.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Login.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ReNewPostControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.MessageReplyerControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostGroupFBControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ScrapDataUserGroupFBControl.resources
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe.config
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Interop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.ResolveComReference.cache
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Hamsan\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe.config
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Interop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.ResolveComReference.cache
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbprojResolveAssemblyReference.cache
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ScrapDataUserGroupFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostGroupFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.MessageReplyerControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ReNewPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.LoginFacebook.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Login.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.FormBase.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ConfigProfileLocation.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.HomeControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.SettingGeneral.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBMobilControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBMotorControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBPropertiControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBLiteControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.MessageSenderControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.InteractionFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Resources.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBGeneralPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ContohGeneralPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.GenerateResource.Cache
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\linux\selenium-manager
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\macos\selenium-manager
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\SeleniumExtras.WaitHelpers.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\System.IO.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\WebDriver.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\WebDriver.Support.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.xml
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.xml
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\Interop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur v 1.7\Facebook Onetobot All Fitur\bin\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\linux\selenium-manager
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\macos\selenium-manager
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\SeleniumExtras.WaitHelpers.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\System.IO.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\WebDriver.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\WebDriver.Support.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Newtonsoft.Json.xml
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\UndetectedChromeDriver.xml
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Interop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Interop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\AxInterop.WMPLib.dll
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.ResolveComReference.cache
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ScrapDataUserGroupFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostGroupFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.MessageReplyerControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ReNewPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.LoginFacebook.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Login.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.FormBase_old.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.FormBase.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ConfigProfileLocation.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.HomeControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.SettingGeneral.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBMobilControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBMotorControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBPropertiControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBLiteControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.MessageSenderControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.InteractionFBControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.Resources.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.PostFBGeneralPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook_Onetobot_All_Fitur.ContohGeneralPostControl.resources
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbproj.GenerateResource.Cache
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe.config
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\bin\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.exe
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.xml
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.pdb
+D:\tamam\project\Facebook Onetobot All Fitur rev 3.2\Facebook Onetobot All Fitur\obj\Debug\Facebook Onetobot All Fitur.vbprojResolveAssemblyReference.cache
