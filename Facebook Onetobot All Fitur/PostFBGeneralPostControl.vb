@@ -298,16 +298,23 @@ Public Class PostFBGeneralPostControl
                 Throw New Exception("Tidak ada Data Profile dan akun Facebook yang akan di jalankan, Pilih Profil dan akun yang akan dijalankan")
             End If
 
-            Dim newThread As Thread =
+            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
+            If existingProfile Is Nothing Then
+
+                Dim newThread As Thread =
                     New Thread(Sub() runRobotWork(foundRows,
                                                     category, conditionProd, isRunAll))
-            '========================================
+                '========================================
 
-            ' Menambahkannya ke daftar thread
-            baseForm.threads.Add(newThread)
+                ' Menambahkannya ke daftar thread
+                baseForm.threads.Add(newThread)
 
-            ' Memulai thread
-            newThread.Start()
+                ' Memulai thread
+                newThread.Start()
+            Else
+                MessageBox.Show(String.Concat("Harapa tunggu beberapa saat sampai proses selesai untuk akun ", profileName),
+                                       "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         End If
 
     End Sub
@@ -479,7 +486,7 @@ Public Class PostFBGeneralPostControl
             Dim countUser = 0
 
             Dim elementList As IReadOnlyCollection(Of IWebElement) = Nothing
-            Dim profileName = dataProfile(2)
+            Dim profileName = dataProfile(1)
             userId = dataProfile(2)
             Dim password As String = dataProfile(3)
 
@@ -504,7 +511,7 @@ Public Class PostFBGeneralPostControl
 
             '========================================
             '//membuka Browser chrome dan menyimpan ke object Profiles di FormBase
-            existingProfile = baseForm.runChromeDriver(userId, 1)
+            existingProfile = baseForm.runChromeDriver(profileName, userId, 1)
             '========================================
 
             '//mendefinisikan jika profile yang dipilih sedang digunakan

@@ -23,7 +23,7 @@ Public Class FormBase
     Public Property Profiles As List(Of ChromeProfile) = New List(Of ChromeProfile)()
     Public Property licensePackage As LicensePackage
 
-    Dim linkTrial As String = "https://youtu.be/1AVnA0BW7_A"
+    Public Property linkTrial As String = "https://youtu.be/1AVnA0BW7_A"
 
     Public Class tabInfo
         Public Property tabAppName As String
@@ -47,9 +47,9 @@ Public Class FormBase
         licensePackage = _licensePackage
     End Sub
 
-    Public Function runChromeDriver(profileName As String, Optional windowsSize As Integer = 0) As ChromeProfile
+    Public Function runChromeDriver(profileName As String, accountCode As String, Optional windowsSize As Integer = 0) As ChromeProfile
 
-        Dim existingProfile = Profiles.Find(Function(p) p.ProfileName = profileName)
+        Dim existingProfile = Profiles.Find(Function(p) p.AccountCode = accountCode)
         If existingProfile IsNot Nothing Then
             If existingProfile.Driver IsNot Nothing Then
                 existingProfile.Driver.Quit()
@@ -59,15 +59,15 @@ Public Class FormBase
 
         Dim driver As UndetectedChromeDriver = Nothing
 
-        Dim newProfile As New ChromeProfile(profileName, driver, True, windowsSize)
+        Dim newProfile As New ChromeProfile(profileName, accountCode, driver, True, windowsSize)
         Profiles.Add(newProfile)
 
-        Return Profiles.Find(Function(p) p.ProfileName = profileName)
+        Return Profiles.Find(Function(p) p.AccountCode = accountCode)
     End Function
 
-    Public Function runChromeLiteDriver(profileName As String) As ChromeProfile
+    Public Function runChromeLiteDriver(profileName As String, accountCode As String) As ChromeProfile
 
-        Dim existingProfile = Profiles.Find(Function(p) p.ProfileName = profileName)
+        Dim existingProfile = Profiles.Find(Function(p) p.AccountCode = accountCode)
         If existingProfile IsNot Nothing Then
             If existingProfile.Driver IsNot Nothing Then
                 existingProfile.Driver.Quit()
@@ -77,10 +77,10 @@ Public Class FormBase
 
         Dim driver As UndetectedChromeDriver = Nothing
 
-        Dim newProfile As New ChromeProfile(profileName, driver, True)
+        Dim newProfile As New ChromeProfile(profileName, accountCode, driver, True)
         Profiles.Add(newProfile)
 
-        Return Profiles.Find(Function(p) p.ProfileName = profileName)
+        Return Profiles.Find(Function(p) p.AccountCode = accountCode)
     End Function
 
     Public Function sleep(second As Integer)
@@ -214,6 +214,16 @@ Public Class FormBase
         End If
     End Sub
 
+    Private Sub disableButton(disable As Boolean, button As Button)
+        If disable Then
+            button.BackColor = Color.FromArgb(128, 128, 128)
+            button.Cursor = Cursors.Default
+        Else
+            button.BackColor = Color.FromArgb(57, 182, 236)
+            button.Cursor = Cursors.Hand
+        End If
+    End Sub
+
     Private Sub ActiveButton(active As Boolean, button As Button)
         If active Then
             button.BackColor = Color.FromArgb(44, 152, 198)
@@ -223,22 +233,40 @@ Public Class FormBase
     End Sub
 
     Private Sub InActiveAllButtonLvl1()
+        For Each registered In licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.POST_Group.ToString
+                    ActiveButton(False, btnPostGroup)
+                Case ModuleRegistration.Interaksi.ToString
+                    ActiveButton(False, btnInteraksi)
+            End Select
+        Next
+
         ActiveButton(False, btnPost)
         ActiveButton(False, BtnDasboard)
-        ActiveButton(False, btnPostGroup)
+        'ActiveButton(False, btnPostGroup)
         ActiveButton(False, btnPesan)
         ActiveButton(False, btnKelolaPost)
-        ActiveButton(False, btnInteraksi)
+        'ActiveButton(False, btnInteraksi)
         ActiveButton(False, btnKonfigurasi)
         ActiveButton(False, btnLogin)
     End Sub
 
     Private Sub InActivePostButton()
-        ActiveButton(False, btnPostUmum)
-        ActiveButton(False, btnPostMotor)
-        ActiveButton(False, btnPostMobil)
-        ActiveButton(False, btnPostProperti)
-        ActiveButton(False, btnPostLite)
+        For Each registered In licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.FBMP_Umum.ToString
+                    ActiveButton(False, btnPostUmum)
+                Case ModuleRegistration.FBMP_Motor.ToString
+                    ActiveButton(False, btnPostMotor)
+                Case ModuleRegistration.FBMP_Mobil.ToString
+                    ActiveButton(False, btnPostMobil)
+                Case ModuleRegistration.FBMP_Properti.ToString
+                    ActiveButton(False, btnPostProperti)
+                Case ModuleRegistration.FBMP_Lite.ToString
+                    ActiveButton(False, btnPostLite)
+            End Select
+        Next
     End Sub
 
     Private Sub HidePanelMenu()
@@ -315,6 +343,44 @@ Public Class FormBase
             PanelButtom.BackColor = Color.FromArgb(255, 128, 0)
             lblPaket.Text = "TRIAL"
         End If
+
+        disableButton(True, btnPostUmum)
+        disableButton(True, btnPostMotor)
+        disableButton(True, btnPostMobil)
+        disableButton(True, btnPostProperti)
+        disableButton(True, btnPostLite)
+        disableButton(True, btnPostGroup)
+        disableButton(True, btnPesanBalas)
+        disableButton(True, btnPesanKirim)
+        disableButton(True, btnKelolaPostPerbarui)
+        disableButton(True, btnKelolaPostHapus)
+        disableButton(True, btnInteraksi)
+        For Each registered In licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.FBMP_Umum.ToString
+                    disableButton(False, btnPostUmum)
+                Case ModuleRegistration.FBMP_Motor.ToString
+                    disableButton(False, btnPostMotor)
+                Case ModuleRegistration.FBMP_Mobil.ToString
+                    disableButton(False, btnPostMobil)
+                Case ModuleRegistration.FBMP_Properti.ToString
+                    disableButton(False, btnPostProperti)
+                Case ModuleRegistration.FBMP_Lite.ToString
+                    disableButton(False, btnPostLite)
+                Case ModuleRegistration.POST_Group.ToString
+                    disableButton(False, btnPostGroup)
+                Case ModuleRegistration.Balas_Pesan.ToString
+                    disableButton(False, btnPesanBalas)
+                Case ModuleRegistration.Kirim_Pesan.ToString
+                    disableButton(False, btnPesanKirim)
+                Case ModuleRegistration.Perbaharui_FBMP.ToString
+                    disableButton(False, btnKelolaPostPerbarui)
+                Case ModuleRegistration.Hapus_FBMP.ToString
+                    disableButton(False, btnKelolaPostHapus)
+                Case ModuleRegistration.Interaksi.ToString
+                    disableButton(False, btnInteraksi)
+            End Select
+        Next
 
         ''/// ==============
         ''// CEK UPDATE VERSI TOOLS
@@ -648,8 +714,14 @@ Public Class FormBase
     End Sub
 
     Private Sub InActivePesanButton()
-        ActiveButton(False, btnPesanBalas)
-        ActiveButton(False, btnPesanKirim)
+        For Each registered In licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.Balas_Pesan.ToString
+                    ActiveButton(False, btnPesanBalas)
+                Case ModuleRegistration.Kirim_Pesan.ToString
+                    ActiveButton(False, btnPesanKirim)
+            End Select
+        Next
     End Sub
 
     Private Sub btnPesanBalas_Click(sender As Object, e As EventArgs) Handles btnPesanBalas.Click
@@ -704,8 +776,14 @@ Public Class FormBase
     End Sub
 
     Private Sub InActiveKelolaPostButton()
-        ActiveButton(False, btnKelolaPostPerbarui)
-        ActiveButton(False, btnKelolaPostHapus)
+        For Each registered In licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.Perbaharui_FBMP.ToString
+                    ActiveButton(False, btnKelolaPostPerbarui)
+                Case ModuleRegistration.Hapus_FBMP.ToString
+                    ActiveButton(False, btnKelolaPostHapus)
+            End Select
+        Next
     End Sub
 
     Private Sub btnKelolaPostPerbarui_Click(sender As Object, e As EventArgs) Handles btnKelolaPostPerbarui.Click

@@ -49,9 +49,9 @@ Public Class FormBase_old
 #Region "public Function"
     'runChromeDriver di gunakan untuk mendeklarasikan browser berdasarkan profile yang dipilih
     'func ini di gunakan seluruh userControl
-    Public Function runChromeDriver(profileName As String, Optional windowsSize As Integer = 0) As ChromeProfile
+    Public Function runChromeDriver(profileName As String, accountCode As String, Optional windowsSize As Integer = 0) As ChromeProfile
 
-        Dim existingProfile = Profiles.Find(Function(p) p.ProfileName = profileName)
+        Dim existingProfile = Profiles.Find(Function(p) p.AccountCode = accountCode)
         If existingProfile IsNot Nothing Then
             If existingProfile.Driver IsNot Nothing Then
                 existingProfile.Driver.Quit()
@@ -61,15 +61,15 @@ Public Class FormBase_old
 
         Dim driver As UndetectedChromeDriver = Nothing
 
-        Dim newProfile As New ChromeProfile(profileName, driver, True, windowsSize)
+        Dim newProfile As New ChromeProfile(profileName, accountCode, driver, True, windowsSize)
         Profiles.Add(newProfile)
 
         Return Profiles.Find(Function(p) p.ProfileName = profileName)
     End Function
 
-    Public Function runChromeLiteDriver(profileName As String) As ChromeProfile
+    Public Function runChromeLiteDriver(profileName As String, accountCode As String) As ChromeProfile
 
-        Dim existingProfile = Profiles.Find(Function(p) p.ProfileName = profileName)
+        Dim existingProfile = Profiles.Find(Function(p) p.AccountCode = accountCode)
         If existingProfile IsNot Nothing Then
             If existingProfile.Driver IsNot Nothing Then
                 existingProfile.Driver.Quit()
@@ -79,11 +79,12 @@ Public Class FormBase_old
 
         Dim driver As UndetectedChromeDriver = Nothing
 
-        Dim newProfile As New ChromeProfile(profileName, driver, True)
+        Dim newProfile As New ChromeProfile(profileName, accountCode, driver, True)
         Profiles.Add(newProfile)
 
         Return Profiles.Find(Function(p) p.ProfileName = profileName)
     End Function
+
 
     Public Function sleep(second As Integer)
         For i = 0 To second * 100

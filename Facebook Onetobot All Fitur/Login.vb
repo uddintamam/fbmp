@@ -7,6 +7,12 @@ Imports Newtonsoft.Json
 Public Class Login
     Public versi = "1.4 Update 24 Nov 2023"
 
+    Public Shared ReadOnly baseUrl As String = "https://api.onetobot.com/api/v1"
+    Public Shared ReadOnly apiLoginUrl As String = baseUrl + "/login"
+    Public Shared ReadOnly apiLogoutUrl As String = baseUrl + "/logout"
+    Public Shared ReadOnly softwareId As Integer = 1
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If Not CheckInternetConnection() Then
@@ -36,14 +42,14 @@ Public Class Login
         End If
 
         Dim mac = getMacAddress()
-        Dim apiUrl As String = "https://api.onetobot.com/api/v1/login"
+        Dim apiUrl As String = apiLoginUrl
         'Dim apiUrl As String = "http://192.168.0.180:4000/api/v1/login"
 
         Dim dataObject As New apiLogin() ' Gantilah YourDataClass dengan nama class objek Anda
         dataObject.email = ""
         dataObject.password = ""
         dataObject.mac_address = mac
-        dataObject.softwareId = 1
+        dataObject.softwareId = softwareId
 
         Try
             Dim response As responseService = SendJson(apiUrl, dataObject).Result
@@ -72,6 +78,11 @@ Public Class Login
         End Try
 
     End Sub
+
+    Friend Shared Function locationProfile() As String
+        Throw New NotImplementedException()
+    End Function
+
     Public Function verificationStatus(type As String, user As String, skey As String, MacAddress As String, produk As String)
         Try
             'type => login , register
@@ -127,14 +138,14 @@ Public Class Login
             type = "login"
         End If
 
-        Dim apiUrl As String = "https://api.onetobot.com/api/v1/login"
+        Dim apiUrl As String = apiLoginUrl
         'Dim apiUrl As String = "http://192.168.0.180:4000/api/v1/login"
 
         Dim dataObject As New apiLogin() ' Gantilah YourDataClass dengan nama class objek Anda
         dataObject.email = txtEmail.Text
         dataObject.password = txtPass.Text
         dataObject.mac_address = mac
-        dataObject.softwareId = 1
+        dataObject.softwareId = softwareId
 
         Try
             Dim response As responseService = SendJson(apiUrl, dataObject).Result

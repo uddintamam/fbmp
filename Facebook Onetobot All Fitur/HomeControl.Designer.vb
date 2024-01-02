@@ -26,13 +26,13 @@ Partial Class HomeControl
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnPostLite = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnPesanKirim = New System.Windows.Forms.Button()
+        Me.btnPostGroup = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
@@ -40,14 +40,14 @@ Partial Class HomeControl
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPostProperti = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnPostMobil = New System.Windows.Forms.Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnPostMotor = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.AutoPostProduk = New System.Windows.Forms.Button()
+        Me.btnPostUmum = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -106,25 +106,25 @@ Partial Class HomeControl
         Me.Label4.Text = "( OWNER TIDUR ROBOT LEMBUR )"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button3
+        'btnPostLite
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.package_64
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(5, 5)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button3.Size = New System.Drawing.Size(123, 119)
-        Me.Button3.TabIndex = 62
-        Me.Button3.Text = "Posting FBMP Versi Lite"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnPostLite.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostLite.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostLite.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostLite.FlatAppearance.BorderSize = 0
+        Me.btnPostLite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostLite.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostLite.ForeColor = System.Drawing.Color.White
+        Me.btnPostLite.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.package_64
+        Me.btnPostLite.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostLite.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostLite.Name = "btnPostLite"
+        Me.btnPostLite.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostLite.Size = New System.Drawing.Size(123, 119)
+        Me.btnPostLite.TabIndex = 62
+        Me.btnPostLite.Text = "Posting FBMP Versi Lite"
+        Me.btnPostLite.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostLite.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -159,45 +159,45 @@ Partial Class HomeControl
         'Timer1
         '
         '
-        'Button6
+        'btnPesanKirim
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.email_64
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(5, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button6.Size = New System.Drawing.Size(119, 119)
-        Me.Button6.TabIndex = 66
-        Me.Button6.Text = "Auto Blast Messenger"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnPesanKirim.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPesanKirim.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPesanKirim.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPesanKirim.FlatAppearance.BorderSize = 0
+        Me.btnPesanKirim.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPesanKirim.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPesanKirim.ForeColor = System.Drawing.Color.White
+        Me.btnPesanKirim.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.email_64
+        Me.btnPesanKirim.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPesanKirim.Location = New System.Drawing.Point(5, 5)
+        Me.btnPesanKirim.Name = "btnPesanKirim"
+        Me.btnPesanKirim.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPesanKirim.Size = New System.Drawing.Size(119, 119)
+        Me.btnPesanKirim.TabIndex = 66
+        Me.btnPesanKirim.Text = "Auto Blast Messenger"
+        Me.btnPesanKirim.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPesanKirim.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btnPostGroup
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.networking_64
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(5, 5)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button7.Size = New System.Drawing.Size(123, 119)
-        Me.Button7.TabIndex = 64
-        Me.Button7.Text = "Posting Group Facebook"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btnPostGroup.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostGroup.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostGroup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostGroup.FlatAppearance.BorderSize = 0
+        Me.btnPostGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostGroup.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostGroup.ForeColor = System.Drawing.Color.White
+        Me.btnPostGroup.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.networking_64
+        Me.btnPostGroup.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostGroup.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostGroup.Name = "btnPostGroup"
+        Me.btnPostGroup.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostGroup.Size = New System.Drawing.Size(123, 119)
+        Me.btnPostGroup.TabIndex = 64
+        Me.btnPostGroup.Text = "Posting Group Facebook"
+        Me.btnPostGroup.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostGroup.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -236,7 +236,7 @@ Partial Class HomeControl
         '
         'Panel12
         '
-        Me.Panel12.Controls.Add(Me.Button6)
+        Me.Panel12.Controls.Add(Me.btnPesanKirim)
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel12.ForeColor = System.Drawing.Color.White
         Me.Panel12.Location = New System.Drawing.Point(399, 0)
@@ -247,7 +247,7 @@ Partial Class HomeControl
         '
         'Panel13
         '
-        Me.Panel13.Controls.Add(Me.Button3)
+        Me.Panel13.Controls.Add(Me.btnPostLite)
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel13.ForeColor = System.Drawing.Color.White
         Me.Panel13.Location = New System.Drawing.Point(266, 0)
@@ -258,7 +258,7 @@ Partial Class HomeControl
         '
         'Panel14
         '
-        Me.Panel14.Controls.Add(Me.Button7)
+        Me.Panel14.Controls.Add(Me.btnPostGroup)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel14.ForeColor = System.Drawing.Color.White
         Me.Panel14.Location = New System.Drawing.Point(133, 0)
@@ -269,7 +269,7 @@ Partial Class HomeControl
         '
         'Panel15
         '
-        Me.Panel15.Controls.Add(Me.Button2)
+        Me.Panel15.Controls.Add(Me.btnPostProperti)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel15.Location = New System.Drawing.Point(0, 0)
         Me.Panel15.Name = "Panel15"
@@ -277,25 +277,25 @@ Partial Class HomeControl
         Me.Panel15.Size = New System.Drawing.Size(133, 129)
         Me.Panel15.TabIndex = 71
         '
-        'Button2
+        'btnPostProperti
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.loan_64
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(5, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button2.Size = New System.Drawing.Size(123, 119)
-        Me.Button2.TabIndex = 60
-        Me.Button2.Text = "Posting FBMP Properti"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnPostProperti.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostProperti.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostProperti.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostProperti.FlatAppearance.BorderSize = 0
+        Me.btnPostProperti.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostProperti.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostProperti.ForeColor = System.Drawing.Color.White
+        Me.btnPostProperti.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.loan_64
+        Me.btnPostProperti.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostProperti.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostProperti.Name = "btnPostProperti"
+        Me.btnPostProperti.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostProperti.Size = New System.Drawing.Size(123, 119)
+        Me.btnPostProperti.TabIndex = 60
+        Me.btnPostProperti.Text = "Posting FBMP Properti"
+        Me.btnPostProperti.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostProperti.UseVisualStyleBackColor = False
         '
         'Panel7
         '
@@ -311,7 +311,7 @@ Partial Class HomeControl
         '
         'Panel10
         '
-        Me.Panel10.Controls.Add(Me.Button4)
+        Me.Panel10.Controls.Add(Me.btnPostMobil)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.ForeColor = System.Drawing.Color.White
         Me.Panel10.Location = New System.Drawing.Point(399, 0)
@@ -320,29 +320,29 @@ Partial Class HomeControl
         Me.Panel10.Size = New System.Drawing.Size(129, 129)
         Me.Panel10.TabIndex = 73
         '
-        'Button4
+        'btnPostMobil
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.car_64
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(5, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button4.Size = New System.Drawing.Size(119, 119)
-        Me.Button4.TabIndex = 70
-        Me.Button4.Text = "Posting FBMP Mobil"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnPostMobil.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostMobil.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostMobil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostMobil.FlatAppearance.BorderSize = 0
+        Me.btnPostMobil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostMobil.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostMobil.ForeColor = System.Drawing.Color.White
+        Me.btnPostMobil.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.car_64
+        Me.btnPostMobil.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostMobil.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostMobil.Name = "btnPostMobil"
+        Me.btnPostMobil.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostMobil.Size = New System.Drawing.Size(119, 119)
+        Me.btnPostMobil.TabIndex = 70
+        Me.btnPostMobil.Text = "Posting FBMP Mobil"
+        Me.btnPostMobil.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostMobil.UseVisualStyleBackColor = False
         '
         'Panel9
         '
-        Me.Panel9.Controls.Add(Me.Button1)
+        Me.Panel9.Controls.Add(Me.btnPostMotor)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel9.ForeColor = System.Drawing.Color.White
         Me.Panel9.Location = New System.Drawing.Point(266, 0)
@@ -351,29 +351,29 @@ Partial Class HomeControl
         Me.Panel9.Size = New System.Drawing.Size(133, 129)
         Me.Panel9.TabIndex = 72
         '
-        'Button1
+        'btnPostMotor
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.motorcycle_64
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(5, 5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.Button1.Size = New System.Drawing.Size(123, 119)
-        Me.Button1.TabIndex = 58
-        Me.Button1.Text = "Posting FBMP Motor"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnPostMotor.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostMotor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostMotor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostMotor.FlatAppearance.BorderSize = 0
+        Me.btnPostMotor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostMotor.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostMotor.ForeColor = System.Drawing.Color.White
+        Me.btnPostMotor.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.motorcycle_64
+        Me.btnPostMotor.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostMotor.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostMotor.Name = "btnPostMotor"
+        Me.btnPostMotor.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostMotor.Size = New System.Drawing.Size(123, 119)
+        Me.btnPostMotor.TabIndex = 58
+        Me.btnPostMotor.Text = "Posting FBMP Motor"
+        Me.btnPostMotor.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostMotor.UseVisualStyleBackColor = False
         '
         'Panel8
         '
-        Me.Panel8.Controls.Add(Me.AutoPostProduk)
+        Me.Panel8.Controls.Add(Me.btnPostUmum)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel8.ForeColor = System.Drawing.Color.White
         Me.Panel8.Location = New System.Drawing.Point(133, 0)
@@ -382,25 +382,25 @@ Partial Class HomeControl
         Me.Panel8.Size = New System.Drawing.Size(133, 129)
         Me.Panel8.TabIndex = 71
         '
-        'AutoPostProduk
+        'btnPostUmum
         '
-        Me.AutoPostProduk.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.AutoPostProduk.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AutoPostProduk.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AutoPostProduk.FlatAppearance.BorderSize = 0
-        Me.AutoPostProduk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AutoPostProduk.Font = New System.Drawing.Font("Tahoma", 9.75!)
-        Me.AutoPostProduk.ForeColor = System.Drawing.Color.White
-        Me.AutoPostProduk.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.online_shop_64
-        Me.AutoPostProduk.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.AutoPostProduk.Location = New System.Drawing.Point(5, 5)
-        Me.AutoPostProduk.Name = "AutoPostProduk"
-        Me.AutoPostProduk.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
-        Me.AutoPostProduk.Size = New System.Drawing.Size(123, 119)
-        Me.AutoPostProduk.TabIndex = 56
-        Me.AutoPostProduk.Text = "Posting FBMP Produk Umum"
-        Me.AutoPostProduk.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.AutoPostProduk.UseVisualStyleBackColor = False
+        Me.btnPostUmum.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.btnPostUmum.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPostUmum.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnPostUmum.FlatAppearance.BorderSize = 0
+        Me.btnPostUmum.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPostUmum.Font = New System.Drawing.Font("Tahoma", 9.75!)
+        Me.btnPostUmum.ForeColor = System.Drawing.Color.White
+        Me.btnPostUmum.Image = Global.Facebook_Onetobot_All_Fitur.My.Resources.Resources.online_shop_64
+        Me.btnPostUmum.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPostUmum.Location = New System.Drawing.Point(5, 5)
+        Me.btnPostUmum.Name = "btnPostUmum"
+        Me.btnPostUmum.Padding = New System.Windows.Forms.Padding(0, 5, 0, 5)
+        Me.btnPostUmum.Size = New System.Drawing.Size(123, 119)
+        Me.btnPostUmum.TabIndex = 56
+        Me.btnPostUmum.Text = "Posting FBMP Produk Umum"
+        Me.btnPostUmum.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPostUmum.UseVisualStyleBackColor = False
         '
         'Panel6
         '
@@ -481,18 +481,18 @@ Partial Class HomeControl
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents AutoPostProduk As System.Windows.Forms.Button
+    Friend WithEvents btnPostLite As System.Windows.Forms.Button
+    Friend WithEvents btnPostProperti As System.Windows.Forms.Button
+    Friend WithEvents btnPostMotor As System.Windows.Forms.Button
+    Friend WithEvents btnPostUmum As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnPostMobil As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnPesanKirim As Button
+    Friend WithEvents btnPostGroup As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel8 As Panel

@@ -29,6 +29,42 @@
         '// ICON UNTUK WAKTU 
         Timer2.Interval = 1000 ' Interval waktu dalam milidetik (1 detik)
         Timer2.Enabled = True
+
+        disableButton(True, btnPostUmum)
+        disableButton(True, btnPostMotor)
+        disableButton(True, btnPostMobil)
+        disableButton(True, btnPostProperti)
+        disableButton(True, btnPostLite)
+        disableButton(True, btnPostGroup)
+        disableButton(True, btnPesanKirim)
+        For Each registered In baseForm.licensePackage.ModulRegistered
+            Select Case registered
+                Case ModuleRegistration.FBMP_Umum.ToString
+                    disableButton(False, btnPostUmum)
+                Case ModuleRegistration.FBMP_Motor.ToString
+                    disableButton(False, btnPostMotor)
+                Case ModuleRegistration.FBMP_Mobil.ToString
+                    disableButton(False, btnPostMobil)
+                Case ModuleRegistration.FBMP_Properti.ToString
+                    disableButton(False, btnPostProperti)
+                Case ModuleRegistration.FBMP_Lite.ToString
+                    disableButton(False, btnPostLite)
+                Case ModuleRegistration.POST_Group.ToString
+                    disableButton(False, btnPostGroup)
+                Case ModuleRegistration.Kirim_Pesan.ToString
+                    disableButton(False, btnPesanKirim)
+            End Select
+        Next
+    End Sub
+
+    Private Sub disableButton(disable As Boolean, button As Button)
+        If disable Then
+            button.BackColor = Color.FromArgb(128, 128, 128)
+            button.Cursor = Cursors.Default
+        Else
+            button.BackColor = Color.FromArgb(15, 102, 139)
+            button.Cursor = Cursors.Hand
+        End If
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -42,7 +78,11 @@
         End If
     End Sub
 
-    Private Sub AutoPostProduk_Click(sender As Object, e As EventArgs) Handles AutoPostProduk.Click
+    Private Sub AutoPostProduk_Click(sender As Object, e As EventArgs) Handles btnPostUmum.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.FBMP_Umum.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostGeneral"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -53,7 +93,11 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPostMotor.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.FBMP_Motor.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostFBMotor"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -64,7 +108,11 @@
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnPostMobil.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.FBMP_Mobil.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostFBMobil"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -75,7 +123,11 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnPostProperti.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.FBMP_Properti.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostFBProperti"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -86,7 +138,11 @@
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnPostLite.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.FBMP_Lite.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostFBLite"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -97,7 +153,11 @@
         End If
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles btnPostGroup.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.POST_Group.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "PostGroupFB"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then
@@ -108,7 +168,11 @@
         End If
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnPesanKirim.Click
+        If FormBase.licensePackage IsNot Nothing AndAlso Not FormBase.licensePackage.ModulRegistered.Contains(ModuleRegistration.Kirim_Pesan.ToString()) Then
+            Process.Start(FormBase.linkTrial)
+            Return
+        End If
         Dim tabName = "SenderMessage"
         Dim tabIndex = baseForm.findTab(tabName)
         If tabIndex > -1 Then

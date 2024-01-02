@@ -39,41 +39,43 @@ Public Class ChromeProfile
 
 #Region "Public Property"
     Public Property ProfileName As String
+    Public Property AccountCode As String
     Public Property Driver As UndetectedChromeDriver
     Public Property IsOnProcess As Boolean
 
     Public Shared ReadOnly locationProfile As String = ConfigurationManager.AppSettings("binProfile")
+
     Public Shared ReadOnly binDebugPath As String = Application.StartupPath
     Public Shared ReadOnly FolderChromeCustom As String = GetFolderPath(SpecialFolder.LocalApplicationData) + "\Google\Chrome\"
     Public Shared ReadOnly FixCustom As String = locationProfile + "\Profile"
     Public Shared ReadOnly MyDoumentProfile As String = locationProfile + "\Profile"
     Public Shared ReadOnly dataUser As String = locationProfile & "\UserData.xml"
     Public Shared ReadOnly waitElement As Integer = CInt(ConfigurationManager.AppSettings("waitElement"))
-
-
 #End Region
 
 #Region "Contructor"
-    Public Sub New(profileName As String, driver As UndetectedChromeDriver, isOnProcess As Boolean, windowsSize As Integer)
+    Public Sub New(profileName As String, accountCode As String, driver As UndetectedChromeDriver, isOnProcess As Boolean, windowsSize As Integer)
         Me.ProfileName = profileName
-        Me.Driver = CreateDriver(windowsSize)
+        Me.AccountCode = accountCode
+        Me.Driver = CreateDriver(windowsSize, accountCode)
         Me.IsOnProcess = isOnProcess
     End Sub
 
-    Public Sub New(profileName As String, driver As UndetectedChromeDriver, isOnProcess As Boolean)
+    Public Sub New(profileName As String, accountCode As String, driver As UndetectedChromeDriver, isOnProcess As Boolean)
         Me.ProfileName = profileName
-        Me.Driver = CreateLiteDriver()
+        Me.AccountCode = accountCode
+        Me.Driver = CreateLiteDriver(accountCode)
         Me.IsOnProcess = isOnProcess
     End Sub
 
 #End Region
 
 #Region "Kumpulan Fungsi yang bisa di gunakan dimana saja"
-    Public Function CreateDriver(windowsSize As Integer) As UndetectedChromeDriver
+    Public Function CreateDriver(windowsSize As Integer, accountCode As String) As UndetectedChromeDriver
         Dim newDriver As UndetectedChromeDriver = Nothing
         Dim options As ChromeOptions = New ChromeOptions()
         '======== BACA PROFILE ==============
-        options.AddArgument("--user-data-dir=" + MyDoumentProfile + "\" + ProfileName)
+        options.AddArgument("--user-data-dir=" + MyDoumentProfile + "\" + accountCode)
         'End If
         'options.AddArgument("--window-size=500,650")
         If windowsSize = 0 Then
@@ -109,17 +111,17 @@ Public Class ChromeProfile
         Try
             newDriver = UndetectedChromeDriver.Create(hideCommandPromptWindow:=True, driverExecutablePath:=fixchromeDriverPath, browserExecutablePath:=chrome_path, options:=options)
         Catch ex As Exception
-            MessageBox.Show("Harap Tutup browser profile " & ProfileName, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Harap Tutup browser profile " & accountCode, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return Nothing
         End Try
         Return newDriver
     End Function
 
-    Public Function CreateLiteDriver() As UndetectedChromeDriver
+    Public Function CreateLiteDriver(accountCode As String) As UndetectedChromeDriver
         Dim newDriver As UndetectedChromeDriver = Nothing
         Dim options As ChromeOptions = New ChromeOptions()
         '======== BACA PROFILE ==============
-        options.AddArgument("--user-data-dir=" + MyDoumentProfile + "\" + ProfileName)
+        options.AddArgument("--user-data-dir=" + MyDoumentProfile + "\" + accountCode)
 
         options.AddArgument("--user-agent=Mozilla/5.0 (Linux; Android 8.1.0; Pixel C Build/OPM8.190605.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Safari/537.36 [FB_IAB/FB4A;FBAV/312.0.0.45.117;]")
         options.AddArgument("--window-size=500,650")
@@ -144,7 +146,7 @@ Public Class ChromeProfile
         Try
             newDriver = UndetectedChromeDriver.Create(hideCommandPromptWindow:=True, driverExecutablePath:=fixchromeDriverPath, browserExecutablePath:=chrome_path, options:=options)
         Catch ex As Exception
-            MessageBox.Show("Harap Tutup browser profile " & ProfileName, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Harap Tutup browser profile " & accountCode, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return Nothing
         End Try
         Return newDriver

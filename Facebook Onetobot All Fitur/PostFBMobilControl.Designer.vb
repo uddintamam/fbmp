@@ -606,6 +606,7 @@ Partial Class PostFBMobilControl
         Me.chkRunAllProfile.TabIndex = 356
         Me.chkRunAllProfile.Text = "Jalankan Bersama"
         Me.chkRunAllProfile.UseVisualStyleBackColor = True
+        Me.chkRunAllProfile.Visible = False
         '
         'Label10
         '

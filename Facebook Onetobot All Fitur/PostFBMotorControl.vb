@@ -372,20 +372,26 @@ Public Class PostFBMotorControl
         Dim foundRows As DataRow() = profileDataSet.Tables(0).Select($"profileChromeCol = '{profileName}' AND digunakanCol = True")
 
         If foundRows.Count > 0 Then
-            '========================================
-            'Masukkan proses kedalam antrian threads
-            'proses dilanjutkan ke function PostingLiteFb
-            Dim newThread As Thread =
+            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
+            If existingProfile Is Nothing Then
+                '========================================
+                'Masukkan proses kedalam antrian threads
+                'proses dilanjutkan ke function PostingLiteFb
+                Dim newThread As Thread =
                     New Thread(Sub() runRobotWork(foundRows,
                                                    tahun, merek, warna, fuel, transmission,
                                                    isRunAll))
-            '========================================
+                '========================================
 
-            ' Menambahkannya ke daftar thread
-            baseForm.threads.Add(newThread)
+                ' Menambahkannya ke daftar thread
+                baseForm.threads.Add(newThread)
 
-            ' Memulai thread
-            newThread.Start()
+                ' Memulai thread
+                newThread.Start()
+            Else
+                MessageBox.Show(String.Concat("Harapa tunggu beberapa saat sampai proses selesai untuk akun ", profileName),
+                                       "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         End If
     End Sub
 
@@ -430,7 +436,7 @@ Public Class PostFBMotorControl
             Dim countUser = 0
 
             Dim elementList As IReadOnlyCollection(Of IWebElement) = Nothing
-            Dim profileName = dataProfile(2)
+            Dim profileName = dataProfile(1)
             userId = dataProfile(2)
             Dim password As String = dataProfile(3)
 
@@ -453,7 +459,7 @@ Public Class PostFBMotorControl
 
             '========================================
             '//membuka Browser chrome dan menyimpan ke object Profiles di FormBase
-            existingProfile = baseForm.runChromeDriver(userId, 1)
+            existingProfile = baseForm.runChromeDriver(profileName, userId, 1)
             '========================================
 
             '//mendefinisikan jika profile yang dipilih sedang digunakan

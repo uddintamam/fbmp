@@ -13,6 +13,7 @@ Public Class SettingGeneral
 
         ' Mengubah nilai di app.config
         config.AppSettings.Settings("binProfile").Value = txtPath.Text
+
         config.AppSettings.Settings("startNum").Value = numStart.Value
         config.AppSettings.Settings("rangeNum").Value = numRange.Value
         config.AppSettings.Settings("waitElement").Value = numWaitElement.Value
@@ -57,12 +58,12 @@ Public Class SettingGeneral
     '// KODE UNTUK LOGOUT APLIKASI ATAU PINDAH APLIKASI
     Private Sub btnLogut_Click(sender As Object, e As EventArgs) Handles btnLogut.Click
         If MessageBox.Show("Apakah anda yakin akan Logout Aplikasi?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
-            Dim apiUrl As String = "https://api.onetobot.com/api/v1/logout"
+            Dim apiUrl As String = Login.apiLogoutUrl
             Dim mac = getMacAddress()
 
             Dim dataObject As New apiLogin() ' Gantilah YourDataClass dengan nama class objek Anda
             dataObject.mac_address = mac
-            dataObject.softwareId = 51
+            dataObject.softwareId = Login.softwareId
 
             Try
                 Dim response As responseService = SendJson(apiUrl, dataObject).Result

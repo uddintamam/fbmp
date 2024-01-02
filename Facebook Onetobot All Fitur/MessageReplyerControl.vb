@@ -184,16 +184,22 @@ Public Class MessageReplyerControl
         Dim foundRows As DataRow() = profileDataSet.Tables(0).Select($"profileChromeCol = '{profileName}' AND digunakanCol = True")
 
         If foundRows.Count > 0 Then
+            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
+            If existingProfile Is Nothing Then
 
-            Dim newThread As Thread =
+                Dim newThread As Thread =
                     New Thread(Sub() runRobotWork(foundRows, isRunAll))
-            '========================================
+                '========================================
 
-            ' Menambahkannya ke daftar thread
-            baseForm.threads.Add(newThread)
+                ' Menambahkannya ke daftar thread
+                baseForm.threads.Add(newThread)
 
-            ' Memulai thread
-            newThread.Start()
+                ' Memulai thread
+                newThread.Start()
+            Else
+                MessageBox.Show(String.Concat("Harapa tunggu beberapa saat sampai proses selesai untuk akun ", profileName),
+                                       "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
         End If
     End Sub
 
@@ -243,7 +249,7 @@ Public Class MessageReplyerControl
 
             Dim success As String = ""
             Dim totalRenew As Integer = 0
-            Dim profileName = dataProfile(2)
+            Dim profileName = dataProfile(1)
             userId = dataProfile(2)
             Dim password As String = dataProfile(3)
 
@@ -251,7 +257,7 @@ Public Class MessageReplyerControl
 
             '========================================
             '//membuka Browser chrome dan menyimpan ke object Profiles di FormBase
-            existingProfile = baseForm.runChromeDriver(userId, 0)
+            existingProfile = baseForm.runChromeDriver(profileName, userId, 0)
             '========================================
             WaitHandle.WaitAny({suspendEvent})
 
@@ -317,10 +323,6 @@ Public Class MessageReplyerControl
                 End Try
                 WaitHandle.WaitAny({suspendEvent})
 
-
-                Dim elementList2 As IReadOnlyCollection(Of IWebElement) =
-                    driver.FindElements(By.XPath("//div[contains(@aria-label, 'Koleksi item Marketplace')][contains(@role, 'main')]/div/div/div/div/div[2]/div/div/div/div/div/div"))
-
                 For a As Integer = 1 To 25
                     driver.ExecuteScript("window.scrollTo(0, document.body.scrollHeight);")
                     Thread.Sleep(jedarandom) ' Tunggu beberapa detik untuk memuat
@@ -337,6 +339,9 @@ Public Class MessageReplyerControl
                         Exit For
                     End If
                 Next
+
+                Dim elementList2 As IReadOnlyCollection(Of IWebElement) =
+                    driver.FindElements(By.XPath("//div[contains(@aria-label, 'Koleksi item Marketplace')][contains(@role, 'main')]/div/div/div/div/div[2]/div/div/div/div/div/div"))
 
                 existingProfile.updateProgress(Me.gridProfile, userId, CInt(3 * 100 / 5))
                 WaitHandle.WaitAny({suspendEvent})

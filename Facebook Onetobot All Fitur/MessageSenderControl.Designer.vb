@@ -23,8 +23,18 @@ Partial Class MessageSenderControl
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gridReport = New System.Windows.Forms.DataGridView()
+        Me.statusCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userIdSuccessCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pesanErrorCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gridProfile = New System.Windows.Forms.DataGridView()
         Me.digunakanCol = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.profileChromeCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userIdforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.passwordforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StartCsvCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sampaiCsvCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lblHeader = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabProfile = New System.Windows.Forms.TabPage()
@@ -64,16 +74,6 @@ Partial Class MessageSenderControl
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.profileChromeCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userIdforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.passwordforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StartCsvCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sampaiCsvCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.statusCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userIdSuccessCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pesanErrorCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.gridReport, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -106,6 +106,36 @@ Partial Class MessageSenderControl
         Me.gridReport.Size = New System.Drawing.Size(756, 147)
         Me.gridReport.TabIndex = 319
         '
+        'statusCol
+        '
+        Me.statusCol.HeaderText = "STATUS"
+        Me.statusCol.Name = "statusCol"
+        Me.statusCol.Width = 80
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn23.HeaderText = "KATA KUNCI/JUDUL"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.HeaderText = "NAMA PROFILE CHROME"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        Me.DataGridViewTextBoxColumn24.Visible = False
+        Me.DataGridViewTextBoxColumn24.Width = 250
+        '
+        'userIdSuccessCol
+        '
+        Me.userIdSuccessCol.HeaderText = "USER ID"
+        Me.userIdSuccessCol.Name = "userIdSuccessCol"
+        '
+        'pesanErrorCol
+        '
+        Me.pesanErrorCol.HeaderText = "PESAN"
+        Me.pesanErrorCol.Name = "pesanErrorCol"
+        Me.pesanErrorCol.Width = 250
+        '
         'gridProfile
         '
         Me.gridProfile.AllowUserToAddRows = False
@@ -125,6 +155,40 @@ Partial Class MessageSenderControl
         Me.digunakanCol.HeaderText = ""
         Me.digunakanCol.Name = "digunakanCol"
         Me.digunakanCol.Width = 30
+        '
+        'profileChromeCol
+        '
+        Me.profileChromeCol.HeaderText = "PROFILE CHROME"
+        Me.profileChromeCol.Name = "profileChromeCol"
+        Me.profileChromeCol.ReadOnly = True
+        Me.profileChromeCol.Visible = False
+        Me.profileChromeCol.Width = 150
+        '
+        'userIdforPostCol
+        '
+        Me.userIdforPostCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.userIdforPostCol.HeaderText = "USER ID"
+        Me.userIdforPostCol.Name = "userIdforPostCol"
+        '
+        'passwordforPostCol
+        '
+        Me.passwordforPostCol.HeaderText = "PASSWORD"
+        Me.passwordforPostCol.Name = "passwordforPostCol"
+        Me.passwordforPostCol.Visible = False
+        '
+        'StartCsvCol
+        '
+        Me.StartCsvCol.HeaderText = "START BARIS CSV"
+        Me.StartCsvCol.Name = "StartCsvCol"
+        Me.StartCsvCol.ReadOnly = True
+        Me.StartCsvCol.Width = 140
+        '
+        'sampaiCsvCol
+        '
+        Me.sampaiCsvCol.HeaderText = "SAMPAI BARIS CSV"
+        Me.sampaiCsvCol.Name = "sampaiCsvCol"
+        Me.sampaiCsvCol.ReadOnly = True
+        Me.sampaiCsvCol.Width = 140
         '
         'lblHeader
         '
@@ -321,6 +385,7 @@ Partial Class MessageSenderControl
         Me.chkRunAllProfile.TabIndex = 356
         Me.chkRunAllProfile.Text = "Jalankan Bersama"
         Me.chkRunAllProfile.UseVisualStyleBackColor = True
+        Me.chkRunAllProfile.Visible = False
         '
         'Label3
         '
@@ -554,70 +619,6 @@ Partial Class MessageSenderControl
         Me.DataGridViewTextBoxColumn10.HeaderText = "PESAN"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.Width = 250
-        '
-        'profileChromeCol
-        '
-        Me.profileChromeCol.HeaderText = "PROFILE CHROME"
-        Me.profileChromeCol.Name = "profileChromeCol"
-        Me.profileChromeCol.ReadOnly = True
-        Me.profileChromeCol.Visible = False
-        Me.profileChromeCol.Width = 150
-        '
-        'userIdforPostCol
-        '
-        Me.userIdforPostCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.userIdforPostCol.HeaderText = "USER ID"
-        Me.userIdforPostCol.Name = "userIdforPostCol"
-        '
-        'passwordforPostCol
-        '
-        Me.passwordforPostCol.HeaderText = "PASSWORD"
-        Me.passwordforPostCol.Name = "passwordforPostCol"
-        Me.passwordforPostCol.Visible = False
-        '
-        'StartCsvCol
-        '
-        Me.StartCsvCol.HeaderText = "START BARIS CSV"
-        Me.StartCsvCol.Name = "StartCsvCol"
-        Me.StartCsvCol.ReadOnly = True
-        Me.StartCsvCol.Width = 140
-        '
-        'sampaiCsvCol
-        '
-        Me.sampaiCsvCol.HeaderText = "SAMPAI BARIS CSV"
-        Me.sampaiCsvCol.Name = "sampaiCsvCol"
-        Me.sampaiCsvCol.ReadOnly = True
-        Me.sampaiCsvCol.Width = 140
-        '
-        'statusCol
-        '
-        Me.statusCol.HeaderText = "STATUS"
-        Me.statusCol.Name = "statusCol"
-        Me.statusCol.Width = 80
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DataGridViewTextBoxColumn23.HeaderText = "KATA KUNCI/JUDUL"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.HeaderText = "NAMA PROFILE CHROME"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        Me.DataGridViewTextBoxColumn24.Visible = False
-        Me.DataGridViewTextBoxColumn24.Width = 250
-        '
-        'userIdSuccessCol
-        '
-        Me.userIdSuccessCol.HeaderText = "USER ID"
-        Me.userIdSuccessCol.Name = "userIdSuccessCol"
-        '
-        'pesanErrorCol
-        '
-        Me.pesanErrorCol.HeaderText = "PESAN"
-        Me.pesanErrorCol.Name = "pesanErrorCol"
-        Me.pesanErrorCol.Width = 250
         '
         'MessageSenderControl
         '

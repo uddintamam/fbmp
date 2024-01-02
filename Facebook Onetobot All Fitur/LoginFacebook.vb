@@ -457,7 +457,7 @@ Public Class LoginFacebook
         End If
     End Sub
 
-    Private Sub cbxDataProfile_TextChanged(sender As Object, e As EventArgs)
+    Private Sub cbxDataProfile_TextChanged(sender As Object, e As EventArgs) Handles cbxDataProfile.TextChanged
         gridUserFacebook.Rows.Clear()
     End Sub
 
@@ -561,7 +561,7 @@ Public Class LoginFacebook
             For Each row As DataGridViewRow In gridUserFacebook.Rows
                 If Not row.IsNewRow Then
 
-                    Dim profileName = row.Cells(0).Value
+                    'Dim profileName = row.Cells(0).Value
                     If File.Exists(ChromeProfile.dataUser) Then
                         Dim dataSet As New DataSet
                         dataSet.ReadXml(ChromeProfile.dataUser)
@@ -578,17 +578,24 @@ Public Class LoginFacebook
                 End If
             Next
 
-            Dim newThread As Thread = New Thread(Sub() LoginToFacebookWork(rowViews, isRunAll))
+            Dim profileName = cbxDataProfile.Text
+            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
+            If existingProfile Is Nothing Then
 
-            'Menambahkannya ke daftar thread
-            baseForm.threads.Add(newThread)
+                Dim newThread As Thread = New Thread(Sub() LoginToFacebookWork(rowViews, profileName, isRunAll))
 
-            ' Memulai thread
-            newThread.Start()
+                'Menambahkannya ke daftar thread
+                baseForm.threads.Add(newThread)
 
+                ' Memulai thread
+                newThread.Start()
+            Else
+                MessageBox.Show(String.Concat("Harapa tunggu beberapa saat sampai proses selesai untuk akun ", profileName),
+                                       "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
 
         Else
-            MessageBox.Show("Tidak ada Data User yang akan login ",
+                MessageBox.Show("Tidak ada Data User yang akan login ",
                                 "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
@@ -598,7 +605,8 @@ Public Class LoginFacebook
             For Each row As DataGridViewRow In gridUserFacebook.SelectedRows
                 If Not row.IsNewRow Then
                     Dim dataTable As DataTable = Nothing
-                    Dim profileName = row.Cells(0).Value
+                    Dim accountCode = row.Cells(0).Value
+                    Dim profileName = cbxDataProfile.Text
                     If File.Exists(ChromeProfile.dataUser) Then
                         Dim dataSet As New DataSet
                         dataSet.ReadXml(ChromeProfile.dataUser)
@@ -619,7 +627,7 @@ Public Class LoginFacebook
                             'End If
                             Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
                             If existingProfile Is Nothing Then
-                                existingProfile = baseForm.runChromeDriver(profileName)
+                                existingProfile = baseForm.runChromeDriver(profileName, accountCode)
 
                                 If existingProfile IsNot Nothing Then
                                     existingProfile.IsOnProcess = True
@@ -651,7 +659,7 @@ Public Class LoginFacebook
         End If
     End Sub
 
-    Private Sub LoginToFacebookWork(dataView As List(Of DataRowView), isRunAll As Boolean)
+    Private Sub LoginToFacebookWork(dataView As List(Of DataRowView), profileName As String, isRunAll As Boolean)
         Dim countdownEvent As CountdownEvent = New CountdownEvent(dataView.Count)
         Dim workerTasks As List(Of Task) = New List(Of Task)()
         Dim datarows As New List(Of DataRow)
@@ -664,9 +672,9 @@ Public Class LoginFacebook
             'If DataRow(3) = 1 Then
             '    Continue For
             'End If
-            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = DataRow(0) And p.IsOnProcess = True)
+            Dim existingProfile = baseForm.Profiles.Find(Function(p) p.AccountCode = DataRow(0) And p.IsOnProcess = True)
             If existingProfile Is Nothing Then
-                existingProfile = baseForm.runChromeDriver(DataRow(0))
+                existingProfile = baseForm.runChromeDriver(profileName, DataRow(0))
 
                 If existingProfile IsNot Nothing Then
                     existingProfile.IsOnProcess = True
@@ -978,7 +986,10 @@ Public Class LoginFacebook
                                 If existingProfile.Driver IsNot Nothing Then
                                     existingProfile.Driver.Quit()
                                 End If
+
+                                baseForm.Profiles.Remove(existingProfile)
                             End Sub)
+
         End If
 
         countdownEvent.Signal()
@@ -1114,7 +1125,8 @@ Public Class LoginFacebook
             For Each row As DataGridViewRow In gridUserFacebook.SelectedRows
                 If Not row.IsNewRow Then
                     Dim dataTable As DataTable = Nothing
-                    Dim profileName = row.Cells(0).Value
+                    Dim accountCode = row.Cells(0).Value
+                    Dim profileName = cbxDataProfile.Text
                     If File.Exists(ChromeProfile.dataUser) Then
                         Dim dataSet As New DataSet
                         dataSet.ReadXml(ChromeProfile.dataUser)
@@ -1135,7 +1147,7 @@ Public Class LoginFacebook
                             'End If
                             Dim existingProfile = baseForm.Profiles.Find(Function(p) p.ProfileName = profileName And p.IsOnProcess = True)
                             If existingProfile Is Nothing Then
-                                existingProfile = baseForm.runChromeDriver(profileName)
+                                existingProfile = baseForm.runChromeDriver(profileName, accountCode)
 
                                 If existingProfile IsNot Nothing Then
                                     existingProfile.IsOnProcess = True

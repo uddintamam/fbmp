@@ -336,7 +336,7 @@ Public Class ScrapDataUserGroupFBControl
 
                 '========================================
                 '//membuka Browser chrome dan menyimpan ke object Profiles di FormBase
-                existingProfile = baseForm.runChromeDriver(profileName, windowsSize)
+                existingProfile = baseForm.runChromeDriver(profileName, "", windowsSize)
                 '========================================
 
                 '//mendefinisikan jika profile yang dipilih sedang digunakan

@@ -25,6 +25,10 @@ Partial Class MessageReplyerControl
         Me.lblHeader = New System.Windows.Forms.Label()
         Me.gridProfile = New System.Windows.Forms.DataGridView()
         Me.digunakanCol = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.profileChromeCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userIdforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.passwordforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.totalRenewCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -51,10 +55,6 @@ Partial Class MessageReplyerControl
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.profileChromeCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userIdforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.passwordforPostCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.totalRenewCol = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.gridProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
@@ -101,6 +101,33 @@ Partial Class MessageReplyerControl
         Me.digunakanCol.HeaderText = ""
         Me.digunakanCol.Name = "digunakanCol"
         Me.digunakanCol.Width = 30
+        '
+        'profileChromeCol
+        '
+        Me.profileChromeCol.HeaderText = "PROFILE CHROME"
+        Me.profileChromeCol.Name = "profileChromeCol"
+        Me.profileChromeCol.ReadOnly = True
+        Me.profileChromeCol.Visible = False
+        Me.profileChromeCol.Width = 150
+        '
+        'userIdforPostCol
+        '
+        Me.userIdforPostCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.userIdforPostCol.HeaderText = "USER ID"
+        Me.userIdforPostCol.Name = "userIdforPostCol"
+        '
+        'passwordforPostCol
+        '
+        Me.passwordforPostCol.HeaderText = "PASSWORD"
+        Me.passwordforPostCol.Name = "passwordforPostCol"
+        Me.passwordforPostCol.Visible = False
+        '
+        'totalRenewCol
+        '
+        Me.totalRenewCol.HeaderText = "TOTAL PESAN DIBALAS"
+        Me.totalRenewCol.Name = "totalRenewCol"
+        Me.totalRenewCol.ReadOnly = True
+        Me.totalRenewCol.Width = 140
         '
         'Panel4
         '
@@ -364,6 +391,7 @@ Partial Class MessageReplyerControl
         Me.chkRunAllProfile.TabIndex = 356
         Me.chkRunAllProfile.Text = "Jalankan Bersama"
         Me.chkRunAllProfile.UseVisualStyleBackColor = True
+        Me.chkRunAllProfile.Visible = False
         '
         'Label3
         '
@@ -420,33 +448,6 @@ Partial Class MessageReplyerControl
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
         Me.DataGridViewTextBoxColumn4.Width = 140
-        '
-        'profileChromeCol
-        '
-        Me.profileChromeCol.HeaderText = "PROFILE CHROME"
-        Me.profileChromeCol.Name = "profileChromeCol"
-        Me.profileChromeCol.ReadOnly = True
-        Me.profileChromeCol.Visible = False
-        Me.profileChromeCol.Width = 150
-        '
-        'userIdforPostCol
-        '
-        Me.userIdforPostCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.userIdforPostCol.HeaderText = "USER ID"
-        Me.userIdforPostCol.Name = "userIdforPostCol"
-        '
-        'passwordforPostCol
-        '
-        Me.passwordforPostCol.HeaderText = "PASSWORD"
-        Me.passwordforPostCol.Name = "passwordforPostCol"
-        Me.passwordforPostCol.Visible = False
-        '
-        'totalRenewCol
-        '
-        Me.totalRenewCol.HeaderText = "TOTAL PESAN DIBALAS"
-        Me.totalRenewCol.Name = "totalRenewCol"
-        Me.totalRenewCol.ReadOnly = True
-        Me.totalRenewCol.Width = 140
         '
         'DataGridViewTextBoxColumn5
         '
